@@ -1,4 +1,5 @@
-import com.example.tek2examdemo.Book;
+package com.example.tek2examdemo;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("api/books")
+@RequestMapping("/api/books")
 public class HelloController {
     List<Book> books = List.of(
             new Book("The Midnight Dispatch", "A gothic tale of inheritance, hidden passageways, and a family's dark secret.", "Evelyn Hartley", 1817),
